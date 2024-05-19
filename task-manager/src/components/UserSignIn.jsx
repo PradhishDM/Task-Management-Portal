@@ -44,7 +44,7 @@ export default function UserSignIn() {
             <input
               id="email"
               type="text"
-              placeholder="Enter your email-id"
+              placeholder="Enter your email"
               ref={emailRef}
               className="input-field"
             />
