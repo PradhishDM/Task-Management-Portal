@@ -25,7 +25,7 @@ export default function AdminPagexx() {
 
     if (admin) {
       console.log("Admin logged in successfully!");
-      navigate("/taskallocation"); // Navigate to task allocation page
+      navigate("/taskallocation");
     } else {
       setError("Admin not found. Please check your credentials.");
     }

@@ -4,7 +4,6 @@ export default function HomePage() {
   const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
-    // Load table data from localStorage on component mount
     const savedData = localStorage.getItem("taskData");
     if (savedData) {
       setTableData(JSON.parse(savedData));

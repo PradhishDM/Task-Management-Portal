@@ -9,7 +9,6 @@ export default function TaskAllocation() {
   const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
-    // Load table data from localStorage on component mount
     const savedData = localStorage.getItem("taskData");
     if (savedData) {
       setTableData(JSON.parse(savedData));
@@ -26,7 +25,7 @@ export default function TaskAllocation() {
     const updatedData = [...tableData, task];
     localStorage.setItem("taskData", JSON.stringify(updatedData));
     setTableData(updatedData);
-    setTask({ employee: "", task: "", status: "Pending" }); // Clear input fields after adding task
+    setTask({ employee: "", task: "", status: "Pending" });
   }
 
   return (
